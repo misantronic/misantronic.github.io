@@ -20,7 +20,7 @@ a:hover {
     box-sizing: border-box;
 
     @media (max-width: 779px) {
-        padding-right: 10px;
+		padding-right: 10px;
         padding-left: 10px;
     }
 }
@@ -45,6 +45,10 @@ header {
 
     > p {
         margin: 0;
+
+		@media (max-width: 380px) {
+			font-size: 12px;
+		}
     }
 }
 
@@ -75,7 +79,7 @@ header {
             line-height: 125%;
             padding: 15px;
             background: #f7f7f7;
-            white-space: pre-wrap;
+            white-space: pre;
             word-wrap: break-word;
             max-height: 350px;
             overflow: auto;
