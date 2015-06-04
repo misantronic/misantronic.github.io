@@ -5,6 +5,23 @@
 	<title>512byt.es</title>
     <link href="./css/style.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto' rel='stylesheet' type='text/css'>
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 <div id="wrapper">
@@ -18,8 +35,16 @@
     <div id="content">
         <div class="project">
             <h2>
+                <a href="https://github.com/misantronic/minc" target="_blank">minc.js</a>
+            </h2>
+            <p>A tiny cross-browser css, javascript- and module-loader.</p>
+            <code>!function(w){function $(a,b){return b=b||[],function _(j,k){var r,i,L,g,m=Minc.m,M=[],C=w.console;return _.done=function(a){r=a},!function l(s,d,o,t,I){with(j=0,(w.define=function(a,b,c){if(j=1,a.call?(c=a,a="",b=[]):a.pop?(c=b,b=a,a=""):b.call&&(c=b,b=[]),m.push({i:a,d:b,m:c}),L=b.length)for(d=L,o=[];d--;){for(g=m.length;g--;)m[g]&&b[d]==m[g].i&&o.push(m[g].m());L!=o.length&&C&&C.log("Missing",b),M.push(c.apply(w,o))}else M.push(c())}).amd=1,document)(d=createElement(t=".css"==s.substr(-4)?"link":"script"))["link"==t?"href":"src"]=s.replace(/https*:/,""),"link"==t?(I=setInterval(function(b){try{if(d.sheet||d[b="styleSheet"]&&d[b].rules&&d[b].rules[0]){try{a[++i]?l(a[i]):r&&r.apply(_,M)}catch(c){}clearInterval(I)}}catch(c){try{a[++i]?l(a[i]):r&&r.apply(_,M)}catch(c){}clearInterval(I)}},5))&&(d.rel="stylesheet"):d.onload=d.onreadystatechange=d.onerror=function(c){"error"==(c=c||this).type&&b[i]?l(b[i]):"load"==c.type||"loaded"==c[g="readyState"]||"complete"==c[g]?a[++i]?l(a[i]):r&&r.apply(_,M):0},getElementsByTagName("head")[0].appendChild(d)}(a[i=0]),_}()}$.m=[],w.Minc=$}(window);</code>
+        </div>
+        <div class="project">
+            <h2>
                 <a href="https://github.com/misantronic/blocc" target="_blank">blocc</a>
             </h2>
+            <p>A tiny ascii side-scrolling jump'n'run.</p>
             <code>function C(a){c=d.x<26?0:c+a}for(var d={x:1,y:0},k=[],j=0,J=0,c=0,e=[{x:51,y:23},{x:121,y:23},{x:141,y:12}],P=[[0],[0],[0,1,2,3,4,5],[0],[0,6,7,8,9,10,11],[0],[0],[0,14,15,16,17,18],[0],[0],[0,25,26,27,105,106,107,108,109,110,120,121,122,123,124,125],[0],[0,140,160],[0,99,100,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160],[0,99],[0,99],[0,99],[0,99],[0,99],[0,99,30,31,32,33,34,35,36,37,38,39,40,80,81,82,83,84,85,86,87,88,89,90],[0,99],[0,99],[0,99],[0,28,29,30,50,99,120,170],[]],i=0;350>=i;i++)i>39&&50>i||i>100&&120>i||(P[24][i]=i);var X=setInterval(function(a,b,f,g,h,i,l){for(b="",a="indexOf",k[39]&&!~P[d.y][a](d.x+1)?d.x++&&C(1):k[37]&&!~P[d.y][a](d.x-1)&&d.x--&&C(-1),h=0;h<e.length;h++)f=e[h],~P[f.y][a](f.x+1)?f.a=0:~P[f.y][a](f.x-1)&&(f.a=1),f.x=f.a?f.x+.5:f.x-.5;for((24==d.y||d.x==f.x&&d.y==f.y)&&clearInterval(X),j&&(d.y-=j,j++,d.y<0&&(d.y=0),j=j>4?0:j),i=0;i<P.length;i++){for(h=c;c+100>h;h++){for(l=1,g=0;g<e.length;g++)if(f=e[g],f.x==h&&f.y==i){f.x==d.x&&f.y==d.y&&clearInterval(X),b+=1==f.a?"c":"ↄ",l=0;break}l&&(b+=d.x==h&&d.y==i?"▄":~P[i][a](h)?"-":" ")}b+="\n"}P[d.y+1]&&!~P[d.y+1][a](d.x)&&d.y++||(J=0),p.innerHTML=b},50);onkeydown=onkeyup=function(a,b){(37==a[b="keyCode"]||39==a[b])&&(k[a[b]]="keydown"==a.type),"keydown"==a.type&&38==a[b]&&!j&&2>J&&(j=1,J++)};</code>
         </div>
     </div>
