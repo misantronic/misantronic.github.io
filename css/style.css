@@ -1,0 +1,57 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+a,
+a:link,
+a:visited,
+a:active {
+  color: #4078c0;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+#wrapper {
+  width: 780px;
+  max-width: 100%;
+  margin: 20px auto;
+}
+#logo {
+  float: left;
+  width: 63px;
+  height: 63px;
+  background: url(https://avatars0.githubusercontent.com/u/6033531?v=3&s=460);
+}
+header {
+  margin-bottom: 20px;
+}
+header > h1 {
+  padding: 0;
+  margin: 0 0 10px;
+}
+header > p {
+  margin: 0;
+}
+#content {
+  width: 100%;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+#content .project {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+#content .project > h2 {
+  margin: 0 0 10px;
+}
+#content .project > code {
+  display: block;
+  line-height: 170%;
+  padding: 5px;
+  background: #f7f7f7;
+  border-radius: 3px;
+  white-space: pre-wrap;
+  font-family: 'Source Code Pro', "Courier New", sans-serif;
+}
