@@ -76,6 +76,6 @@ header > p {
 }
 @media (max-width: 779px) {
   #content .project > code {
-    overflow: hidden;
+    max-height: none;
   }
 }
