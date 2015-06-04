@@ -24,6 +24,7 @@ a:hover {
     width: 63px;
     height: 63px;
     background: url(https://avatars0.githubusercontent.com/u/6033531?v=3&s=460);
+    margin-right: 10px;
 }
 
 header {
@@ -45,21 +46,26 @@ header {
     box-sizing: border-box;
 
     .project {
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 15px;
 
         > h2 {
             margin: 0 0 10px;
         }
 
+        > p {
+            margin: 0 0 10px;
+        }
+
         > code {
+            font-family: 'Source Code Pro', "Courier New", sans-serif;
             display: block;
-            line-height: 170%;
+            line-height: 125%;
             padding: 5px;
             background: #f7f7f7;
             border-radius: 3px;
             white-space: pre-wrap;
-            font-family: 'Source Code Pro', "Courier New", sans-serif;
+            word-wrap: break-word;
         }
     }
 }
