@@ -17,6 +17,12 @@ a:hover {
     width: 780px;
     max-width: 100%;
     margin: 20px auto;
+    box-sizing: border-box;
+
+    @media (max-width: 779px) {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
 
 #logo {
@@ -45,9 +51,13 @@ header {
     padding: 0 8px;
     box-sizing: border-box;
 
+    @media (max-width: 779px) {
+        padding: 0;
+    }
+
     .project {
         font-size: 14px;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
 
         > h2 {
             margin: 0 0 10px;
@@ -66,6 +76,12 @@ header {
             border-radius: 3px;
             white-space: pre-wrap;
             word-wrap: break-word;
+            max-height: 150px;
+            overflow: auto;
+
+            @media (max-width: 779px) {
+                overflow: hidden;
+            }
         }
     }
 }
