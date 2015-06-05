@@ -46,7 +46,7 @@ header #logo {
   float: left;
   width: 63px;
   height: 63px;
-  background: url(../img/logo.png);
+  background: url(img/logo.png);
   margin-right: 10px;
 }
 #content {
