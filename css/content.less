@@ -1,0 +1,38 @@
+#content {
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+
+    @media (max-width: 779px) {
+        padding: 0;
+    }
+
+    .project {
+        font-size: 14px;
+        margin-bottom: 30px;
+
+        > h2 {
+            margin: 0 0 10px;
+        }
+
+        > p {
+            margin: 0 0 10px;
+        }
+
+        > code {
+            font-family: 'Source Code Pro', "Courier New", sans-serif;
+            display: block;
+            line-height: 125%;
+            padding: 15px;
+            background: #f7f7f7;
+            white-space: pre;
+            word-wrap: break-word;
+            max-height: 350px;
+            overflow: auto;
+
+            @media (max-width: 779px) {
+                max-height: none;
+            }
+        }
+    }
+}

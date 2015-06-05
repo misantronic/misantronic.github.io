@@ -21,6 +21,9 @@
     <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="./css/general.css"/>
+    <link rel="stylesheet" href="./css/header.css"/>
 </head>
 <body>
     <div id="wrapper">
@@ -62,17 +65,6 @@
             </div>
         </div>
     </div>
-    <script>
-        window.onload = function() {
-            var script = document.createElement('script')
-            script.src = "./bower_components/minc/src/minc.min.js";
-            script.async = "async";
-            script.onload = function() {
-                Minc(['./css/style.css']);
-            };
-
-            document.head.appendChild(script);
-        }
-    </script>
+    <link rel="stylesheet" href="./css/content.css"/>
 </body>
 </html>
