@@ -1,3 +1,0 @@
-Minc([
-	'./css/style.css'
-]);
