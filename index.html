@@ -64,7 +64,14 @@
     </div>
     <script>
         window.onload = function() {
-            document.write('<script src="./bower_components/minc/src/minc.min.js" async onload="Minc([\'./css/style.css\']);"><\/script>');
+            var script = document.createElement('script')
+            script.src = "./bower_components/minc/src/minc.min.js";
+            script.async = "async";
+            script.onload = function() {
+                Minc(['./css/style.css']);
+            };
+
+            document.head.appendChild(script);
         }
     </script>
 </body>
