@@ -1,0 +1,7 @@
+{
+  "name": "tript.js",
+  "link": "https://github.com/misantronic/tript",
+  "description": "A tiny Template-Engine mixing up HTML and pure JavaScript in one template",
+  "code": "./bower_components/tript/dist/tript.min.js",
+  "demo": "http://codepen.io/misantronic/pen/ogNbBa"
+}

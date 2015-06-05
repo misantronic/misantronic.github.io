@@ -35,35 +35,11 @@
         </header>
         <div id="content">
 			<h2>Tools</h2>
-			<div class="project">
-				<h3>
-					<a href="https://github.com/misantronic/tript" target="_blank">tript.js</a>
-				</h3>
-				<p>A tiny Template-Engine mixing up HTML and pure JavaScript in one template</p>
-				<code>function T(t,c,r,_){return eval(&quot;with(c||{}){_='';&quot;+t[r=&quot;replace&quot;](/(?:\n|^)\s*(&lt;.*)/g,function(p,a){return'_+=&quot;'+a[r](/&quot;/g,'\\&quot;')[r](/&lt;%(.*?)%&gt;|\$(\w+(?:\.*[a-z0-9_[]]*)*)\|*([|\w]*)/gi,'&quot;+ (&quot;$3&quot; ? T[&quot;$3&quot;]($1$2) : ($1$2)) +&quot;')+'&quot;;'})+&quot;}&quot;)}</code>
-			</div>
-            <div class="project">
-                <h3>
-                    <a href="https://github.com/misantronic/minc" target="_blank">minc.js</a>
-                </h3>
-                <p>A tiny cross-browser css, javascript- and module-loader.</p>
-                <code>!function(w){function $(a,b){return b=b||[],function _(j,k){var r,i,L,g,m=Minc.m,M=[],C=w.console;return _.done=function(a){r=a},!function l(s,d,o,t,I){with(j=0,(w.define=function(a,b,c){if(j=1,a.call?(c=a,a=&quot;&quot;,b=[]):a.pop?(c=b,b=a,a=&quot;&quot;):b.call&amp;&amp;(c=b,b=[]),m.push({i:a,d:b,m:c}),L=b.length)for(d=L,o=[];d--;){for(g=m.length;g--;)m[g]&amp;&amp;b[d]==m[g].i&amp;&amp;o.push(m[g].m());L!=o.length&amp;&amp;C&amp;&amp;C.log(&quot;Missing&quot;,b),M.push(c.apply(w,o))}else M.push(c())}).amd=1,document)(d=createElement(t=&quot;.css&quot;==s.substr(-4)?&quot;link&quot;:&quot;script&quot;))[&quot;link&quot;==t?&quot;href&quot;:&quot;src&quot;]=s.replace(/https*:/,&quot;&quot;),&quot;link&quot;==t?(I=setInterval(function(b){try{if(d.sheet||d[b=&quot;styleSheet&quot;]&amp;&amp;d[b].rules&amp;&amp;d[b].rules[0]){try{a[++i]?l(a[i]):r&amp;&amp;r.apply(_,M)}catch(c){}clearInterval(I)}}catch(c){try{a[++i]?l(a[i]):r&amp;&amp;r.apply(_,M)}catch(c){}clearInterval(I)}},5))&amp;&amp;(d.rel=&quot;stylesheet&quot;):d.onload=d.onreadystatechange=d.onerror=function(c){&quot;error&quot;==(c=c||this).type&amp;&amp;b[i]?l(b[i]):&quot;load&quot;==c.type||&quot;loaded&quot;==c[g=&quot;readyState&quot;]||&quot;complete&quot;==c[g]?a[++i]?l(a[i]):r&amp;&amp;r.apply(_,M):0},getElementsByTagName(&quot;head&quot;)[0].appendChild(d)}(a[i=0]),_}()}$.m=[],w.Minc=$}(window);</code>
-            </div>
+			<!-- @project ./templates/projects/tript.json -->
+			<!-- @project ./templates/projects/minc.json -->
 			<h2>Games</h2>
-            <div class="project">
-                <h3>
-                    <a href="https://github.com/misantronic/blocc" target="_blank">blocc</a>
-                </h3>
-                <p>A tiny ascii side-scrolling jump'n'run.</p>
-                <code>for(var d={x:1,y:0},e=[{x:51,y:23},{x:91,y:19},{x:31,y:23},{x:121,y:23},{x:141,y:12}],G={x:240,y:5},P=[[0],[0],[0,1,2,3,4,5],[0],[0,6,7,8,9,10,11,241],[0,241],[0,241],[0,14,15,16,17,18,241],[0,241],[0,241],[0,25,26,27,105,106,107,108,109,110,120,121,122,123,124,125,241],[0,241],[0,140,160,241],[0,99,100,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,241],[0,99,241],[0,99,235,236,237,238,239,240,241],[0,99],[0,99,225,226,227,228,229,230],[0,99],[0,99,30,31,32,33,34,35,36,37,38,39,40,80,81,82,83,84,85,86,87,88,89,90,215,216,217,218,219,220],[0,99],[0,99,205,206,207,208,209,210],[0,99],[0,28,29,30,50,99,120,170],[],[]],i=0;350&gt;=i;i++)i&gt;39&amp;&amp;50&gt;i||i&gt;100&amp;&amp;120&gt;i||i&gt;140&amp;&amp;155&gt;i||i&gt;170&amp;&amp;190&gt;i||i&gt;200||(P[24][i]=i);var k=[],j=J=c=0,_=setInterval(function(a,b,f,g,h,i,l,m){for(f=&quot;&quot;,a=&quot;indexOf&quot;,b=clearInterval,k[39]&amp;&amp;!~P[d.y][a](d.x+1)?d.x++&amp;&amp;(c=d.x&lt;26?0:c+1):k[37]&amp;&amp;!~P[d.y][a](d.x-1)&amp;&amp;d.x--&amp;&amp;(c=d.x&lt;26?0:c-1),d.y&gt;24&amp;&amp;b(_),j&amp;&amp;(d.y-=j,j++,d.y&lt;0&amp;&amp;(d.y=0),j=j&gt;4?0:j),l=0;l&lt;P.length;l++){for(i=c;i&lt;c+100;i++){for(m=1,h=0;h&lt;e.length;h++)if(g=e[h],i!=c||l||(~P[g.y][a](g.x+1)?g.a=0:~P[g.y][a](g.x-1)&amp;&amp;(g.a=1),g.x=g.a?g.x+1:g.x-1),g.x==i&amp;&amp;g.y==l){g.x==d.x&amp;&amp;g.y==d.y&amp;&amp;b(_),f+=&quot;&lt;i&gt;▄&lt;/i&gt;&quot;,m=0;break}G.x==d.x&amp;&amp;G.y==d.y&amp;&amp;b(_),m&amp;&amp;(f+=d.x==i&amp;&amp;d.y==l?&quot;&lt;b&gt;▄&lt;/b&gt;&quot;:G.x==i&amp;&amp;G.y==l?&quot;&lt;u&gt;▄&lt;/u&gt;&quot;:~P[l][a](i)?&quot;▄&quot;:&quot; &quot;)}f+=&quot;\n&quot;}P[d.y+1]&amp;&amp;!~P[d.y+1][a](d.x)&amp;&amp;d.y++||(J=0),p.innerHTML=f},50);onkeydown=onkeyup=function(a,b){(37==a[b=&quot;keyCode&quot;]||39==a[b])&amp;&amp;(k[a[b]]=&quot;keydown&quot;==a.type),&quot;keydown&quot;==a.type&amp;&amp;38==a[b]&amp;&amp;!j&amp;&amp;J&lt;2&amp;&amp;(j=1,J++)};</code>
-            </div>
-            <div class="project">
-                <h3>
-                    <a href="https://github.com/misantronic/min/tree/master/invasion" target="_blank">invasion</a>
-                </h3>
-                <p>space-invader clone</p>
-                <code>for(p=389,L=l=m=t=0,c=&quot; _ &quot;,onkeydown=function(e){39==(k=e.which)?p++:37==k?p--:!l&amp;(l=p)},setInterval('_=&quot;&lt;pre&gt;&quot;;l&amp;(l-=20)&lt;0&amp;&amp;(l=0);m=(m+=20)&gt;p?b[+new Date%6]:m;for(i=0;i&lt;400;i++){if(i%20==0)_+=&quot;\\n&quot;;if(~b[n=&quot;indexOf&quot;](l))b.splice(b[n](l),1),L+=5,l=0;if(~b[n](p)||p==m)p=n,b=[],c=&quot;xxx&quot;;_+=i==p?&quot;oIo&quot;:~b[n](i)?&quot;.#.&quot;:i==m&amp;&amp;m?&quot; * &quot;:i==l&amp;&amp;l?&quot; | &quot;:c}document.body.innerHTML=_+=&quot;\\nP &quot;+L;t+=o;for(i in b)b[i]+=t%5e3==0?20:t%2e3==0?1:t%1e3==0&amp;&amp;-1',o=50),b=[],j=2;136&gt;j;j+=14==j||94==j?29:55==j?27:2)b.push(j);</code>
-            </div>
+			<!-- @project ./templates/projects/blocc.json -->
+			<!-- @project ./templates/projects/invasion.json -->
         </div>
     </div>
 </body>

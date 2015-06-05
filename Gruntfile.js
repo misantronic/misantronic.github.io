@@ -1,12 +1,31 @@
 module.exports = function(grunt) {
 
+	function htmlencode(str) {
+		return str.replace(/[\u00A0-\u9999<>\&]/gim, function(i) {
+			return '&#'+i.charCodeAt(0)+';';
+		});
+	}
+
+	function parseProject(file) {
+		var project = JSON.parse(grunt.file.read(file));
+		var code = grunt.file.read(project.code);
+		return '' +
+			'<div class="project">' +
+			'	<h3>' +
+			'		<a href="'+ project.link +'" target="_blank">'+ project.name +'</a>' +
+			'	</h3>' +
+			'	<p>'+ project.description +'</p>' +
+			'	<code>'+ htmlencode(code) +'</code>' +
+			'</div>';
+	}
+
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
 		htmlmin: {
 			dist: {
 				options: {
-					removeComments: true,
+					removeComments: false,
 					collapseWhitespace: true
 				},
 				files: {
@@ -29,12 +48,18 @@ module.exports = function(grunt) {
 					'index.html': 'index.html'
 				},
 				options: {
-					replacements: [{
-						pattern: /<!-- @import (.*?) -->/ig,
-						replacement: function (match, p1) {
-							return grunt.file.read(p1);
+					replacements: [
+						{
+							pattern: /<!-- @(.*?) (.*?) -->/ig,
+							replacement: function (match, $1, $2) {
+								if($1 == 'import') {
+									return grunt.file.read($2);
+								} else if($1 == 'project') {
+									return parseProject($2);
+								}
+							}
 						}
-					}]
+					]
 				}
 			}
 		}

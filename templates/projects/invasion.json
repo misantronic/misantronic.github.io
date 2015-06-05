@@ -1,0 +1,6 @@
+{
+  "name": "invasion",
+  "link": "https://github.com/misantronic/min/tree/master/invasion",
+  "description": "space invaders clone.",
+  "code": "./bower_components/min/invasion/invasion.min.js"
+}
