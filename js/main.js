@@ -1,0 +1,3 @@
+Minc([
+	'./css/style.css'
+]);
