@@ -1,0 +1,9 @@
+body {
+	background-color: #A00;
+	color: #FFF;
+	font-family: sans-serif;
+}
+
+body.success {
+	background-color: #0A0;
+}

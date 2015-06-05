@@ -1,0 +1,25 @@
+{
+  "name": "minc",
+  "version": "0.6.7",
+  "homepage": "https://github.com/misantronic/minc",
+  "authors": [
+    "David Schkalee"
+  ],
+  "description": "A tiny cross-browser css, javascript- and module-loader.",
+  "main": "src/minc.min.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "module",
+    "loader"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
