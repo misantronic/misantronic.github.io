@@ -1,0 +1,20 @@
+{
+  "name": "misantronic.github.io",
+  "version": "0.1.0",
+  "homepage": "https://github.com/misantronic/misantronic.github.io",
+  "authors": [
+    "David Schkalee <david.schkalee@posteo.de>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "minc": "~0.6.7"
+  }
+}
