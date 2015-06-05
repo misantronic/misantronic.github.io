@@ -22,8 +22,60 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="./css/general.css"/>
-    <link rel="stylesheet" href="./css/header.css"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        a,
+        a:link,
+        a:visited,
+        a:active {
+            color: #4078c0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #wrapper {
+            width: 780px;
+            max-width: 100%;
+            margin: 20px auto;
+            box-sizing: border-box;
+        }
+        @media (max-width: 779px) {
+            #wrapper {
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+        }
+
+        header {
+            margin-bottom: 30px;
+        }
+        header > h1 {
+            padding: 0;
+            margin: 0 0 11px;
+            height: 36px;
+            line-height: 39px;
+        }
+        header > p {
+            margin: 0;
+        }
+        @media (max-width: 380px) {
+            header > p {
+                font-size: 12px;
+            }
+        }
+        header #logo {
+            float: left;
+            width: 63px;
+            height: 63px;
+            background: url(./img/logo.png);
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
     <div id="wrapper">
@@ -68,3 +120,4 @@
     <link rel="stylesheet" href="./css/content.css"/>
 </body>
 </html>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto"/>
