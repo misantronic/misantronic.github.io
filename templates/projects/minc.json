@@ -2,5 +2,6 @@
   "name": "minc.js",
   "link": "https://github.com/misantronic/minc",
   "description": "A tiny cross-browser css, javascript- and module-loader.",
-  "code": "./bower_components/minc/src/minc.min.js"
+  "code": "./bower_components/minc/src/minc.min.js",
+  "demo": "http://codepen.io/misantronic/details/qEBwvL/"
 }

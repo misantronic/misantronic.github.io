@@ -1,0 +1,7 @@
+{
+  "name": "tron",
+  "link": "https://github.com/misantronic/min/tree/master/tron",
+  "description": "Tron in 757 bytes",
+  "code": "./bower_components/min/tron/tron.min.js",
+  "demo": "http://codepen.io/misantronic/pen/VYwqKG"
+}

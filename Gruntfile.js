@@ -15,7 +15,10 @@ module.exports = function(grunt) {
 			'		<a href="'+ project.link +'" target="_blank">'+ project.name +'</a>' +
 			'	</h3>' +
 			'	<p>'+ project.description +'</p>' +
-			'	<code>'+ htmlencode(code) +'</code>' +
+			'	<div class="code">' +
+			'		<code>'+ htmlencode(code) +'</code>' +
+			(project.demo ? '<a class="link-demo" href="'+ project.demo +'" target="_blank">Demo</a>' : '') +
+			'	</div>' +
 			'</div>';
 	}
 

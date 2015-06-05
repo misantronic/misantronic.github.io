@@ -1,0 +1,7 @@
+{
+  "name": "hyperhydration",
+  "link": "https://github.com/misantronic/min/tree/master/hyperhydration",
+  "description": "Collect under water bubble to stay alive",
+  "code": "./bower_components/min/hyperhydration/hyperhydration.min.js",
+  "demo": "https://cdn.rawgit.com/misantronic/min/master/hyperhydration/hyperhydration.html"
+}
