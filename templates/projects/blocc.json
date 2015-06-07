@@ -1,6 +1,7 @@
 {
   "name": "blocc",
   "link": "https://github.com/misantronic/blocc",
-  "description": "A tiny ascii side-scrolling jump'n'run.",
-  "code": "./bower_components/blocc/dist/core.min.js"
+  "description": "A tiny ascii side-scrolling platformer.",
+  "code": "./bower_components/blocc/dist/core.min.js",
+  "demo": "https://cdn.rawgit.com/misantronic/blocc/master/game.html"
 }

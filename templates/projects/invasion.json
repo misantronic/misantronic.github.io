@@ -3,5 +3,5 @@
   "link": "https://github.com/misantronic/min/tree/master/invasion",
   "description": "Space Invaders in 502 bytes",
   "code": "./bower_components/min/invasion/invasion.min.js",
-  "demo": "https://cdn.rawgit.com/misantronic/min/master/invasion/invasion.html"
+  "demo": "http://codepen.io/misantronic/pen/yyLGVa"
 }
