@@ -3,5 +3,5 @@
   "link": "https://github.com/misantronic/blocc",
   "description": "A tiny ascii side-scrolling platformer.",
   "code": "./bower_components/blocc/dist/core.min.js",
-  "demo": "https://cdn.rawgit.com/misantronic/blocc/master/game.html"
+  "demo": "http://codepen.io/misantronic/pen/KpmqdP"
 }
