@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 		var project = JSON.parse(grunt.file.read(file));
 		var code = grunt.file.read(project.code);
 		return '' +
-			'<div class="project">' +
+			'<article>' +
 			'	<h3>' +
 			'		<a href="'+ project.link +'" target="_blank">'+ project.name +'</a>' +
 			'	</h3>' +
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 			'		<code>'+ htmlencode(code) +'</code>' +
 			(project.demo ? '<a class="link-demo" href="'+ project.demo +'" target="_blank">Demo</a>' : '') +
 			'	</div>' +
-			'</div>';
+			'</article>';
 	}
 
 	grunt.initConfig({
