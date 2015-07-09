@@ -19,6 +19,9 @@ module.exports = function(grunt) {
 			'		<code itemprop="text">'+ htmlencode(code) +'</code>' +
 			(project.demo ? '<a class="link-demo" href="'+ project.demo +'" target="_blank" itemprop="exampleOfWork">Demo</a>' : '') +
 			'	</div>' +
+			'	<meta itemprop="author" content="David Skx" />' +
+			'	<meta itemprop="creator" content="David Skx" />' +
+			'	<meta itemprop="license" content="http://opensource.org/licenses/MIT" />' +
 			'</article>';
 	}
 
