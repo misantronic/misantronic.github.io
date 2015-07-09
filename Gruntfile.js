@@ -12,12 +12,12 @@ module.exports = function(grunt) {
 		return '' +
 			'<article itemscope itemtype="http://schema.org/Code">' +
 			'	<h3>' +
-			'		<a href="'+ project.link +'" target="_blank" itemprop="name">'+ project.name +'</a>' +
+			'		<a href="'+ project.link +'" target="_blank" itemprop="url"><span itemprop="name">'+ project.name +'</span></a>' +
 			'	</h3>' +
-			'	<p itemprop="text">'+ project.description +'</p>' +
+			'	<p itemprop="description">'+ project.description +'</p>' +
 			'	<div class="code">' +
-			'		<code itemprop="exampleOfWork">'+ htmlencode(code) +'</code>' +
-			(project.demo ? '<a class="link-demo" href="'+ project.demo +'" target="_blank" itemprop="url">Demo</a>' : '') +
+			'		<code itemprop="text">'+ htmlencode(code) +'</code>' +
+			(project.demo ? '<a class="link-demo" href="'+ project.demo +'" target="_blank" itemprop="exampleOfWork">Demo</a>' : '') +
 			'	</div>' +
 			'</article>';
 	}
