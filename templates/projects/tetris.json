@@ -1,7 +1,7 @@
 {
   "name": "tetris",
   "link": "https://github.com/misantronic/tetris",
-  "description": "tetris clone in only 1K",
+  "description": "tetris clone in ~1K",
   "code": "./bower_components/tetris/dist/tetris.js",
   "demo": "https://cdn.rawgit.com/misantronic/tetris/master/game.html"
 }
