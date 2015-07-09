@@ -10,14 +10,14 @@ module.exports = function(grunt) {
 		var project = JSON.parse(grunt.file.read(file));
 		var code = grunt.file.read(project.code);
 		return '' +
-			'<article>' +
+			'<article itemscope itemtype="http://schema.org/Code">' +
 			'	<h3>' +
-			'		<a href="'+ project.link +'" target="_blank">'+ project.name +'</a>' +
+			'		<a href="'+ project.link +'" target="_blank" itemprop="name">'+ project.name +'</a>' +
 			'	</h3>' +
-			'	<p>'+ project.description +'</p>' +
+			'	<p itemprop="text">'+ project.description +'</p>' +
 			'	<div class="code">' +
-			'		<code>'+ htmlencode(code) +'</code>' +
-			(project.demo ? '<a class="link-demo" href="'+ project.demo +'" target="_blank">Demo</a>' : '') +
+			'		<code itemprop="exampleOfWork">'+ htmlencode(code) +'</code>' +
+			(project.demo ? '<a class="link-demo" href="'+ project.demo +'" target="_blank" itemprop="url">Demo</a>' : '') +
 			'	</div>' +
 			'</article>';
 	}
