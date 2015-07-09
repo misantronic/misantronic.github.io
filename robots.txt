@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /templates
+Disallow: /node_modules
+Disallow: /img
+Disallow: /favicon
+Disallow: /css
+Disallow: /bower_components
