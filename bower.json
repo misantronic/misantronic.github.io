@@ -19,6 +19,7 @@
     "minc": "~0.6.7",
     "blocc": "https://github.com/misantronic/blocc.git",
     "tetris": "https://github.com/misantronic/tetris.git",
-    "min": "https://github.com/misantronic/min.git"
+    "min": "https://github.com/misantronic/min.git",
+    "chess.js": "https://github.com/misantronic/chess.js.git"
   }
 }

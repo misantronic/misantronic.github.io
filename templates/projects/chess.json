@@ -1,0 +1,7 @@
+{
+  "name": "chess.js",
+  "link": "https://github.com/misantronic/chess.js",
+  "description": "chess in ~1K",
+  "code": "./bower_components/chess.js/dist/core.min.js",
+  "demo": "https://cdn.rawgit.com/misantronic/chess.js/master/index.html"
+}
