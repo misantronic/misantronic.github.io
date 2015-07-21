@@ -1,7 +1,7 @@
 {
   "name": "chess.js",
   "link": "https://github.com/misantronic/chess.js",
-  "description": "chess in ~1K",
+  "description": "A 2-player competitive chess-game in 1k",
   "code": "./bower_components/chess.js/dist/core.min.js",
   "demo": "https://cdn.rawgit.com/misantronic/chess.js/master/index.html"
 }
