@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 		return '' +
 			'<article itemscope itemtype="http://schema.org/Code">' +
 			'	<h3>' +
-			'		<a href="'+ project.link +'" target="_blank" itemprop="url"><span itemprop="name">'+ project.name +'</span></a>' +
+			'		<a href="'+ project.link +'" target="_blank" name="'+ project.name +'" itemprop="url"><span itemprop="name">'+ project.name +'</span></a>' +
 			'	</h3>' +
 			'	<p itemprop="description">'+ project.description +'</p>' +
 			'	<div class="code">' +
