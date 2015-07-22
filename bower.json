@@ -20,6 +20,7 @@
     "blocc": "https://github.com/misantronic/blocc.git",
     "tetris": "https://github.com/misantronic/tetris.git",
     "min": "https://github.com/misantronic/min.git",
-    "chess.js": "https://github.com/misantronic/chess.js.git"
+    "chess.js": "https://github.com/misantronic/chess.js.git",
+    "framewreck": "~1.4.5"
   }
 }

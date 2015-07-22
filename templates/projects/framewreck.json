@@ -1,0 +1,7 @@
+{
+  "name": "framewreck",
+  "link": "https://github.com/misantronic/framewreck",
+  "description": "A lightweight modular JavaScript framework",
+  "code": "./bower_components/framewreck/dist/framewreck.min.js",
+  "demo": "https://github.com/misantronic/framewreck#framewreck--"
+}
