@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "tript": "~0.5.0",
-    "minc": "~0.6.7",
+    "minc": "~0.7.0",
     "blocc": "https://github.com/misantronic/blocc.git",
     "tetris": "https://github.com/misantronic/tetris.git",
     "min": "https://github.com/misantronic/min.git",
